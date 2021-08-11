@@ -13,16 +13,11 @@ import {Input, NativeBaseProvider} from 'native-base';
 import {useNavigation} from '@react-navigation/native';
 import colorConstant from './constants/colorConstant';
 import {Button} from 'react-native-paper';
-import view from './screens/view';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-
-
-
-
 const Login = () => {
- 
+
   const [show, setShow] = React.useState(false);
   // const [showEmailError, setShowEmailError] = React.useState(false);
   const [pwd, setPwd] = React.useState();
@@ -52,8 +47,8 @@ const Login = () => {
         {
  
             //Then open Profile activity and send user email to profile activity.
-            
-            Alert.alert('Sucessfully');
+           Alert.alert('SUCESS');
+ 
         }
         else{
  
