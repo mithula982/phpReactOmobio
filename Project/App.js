@@ -17,25 +17,12 @@ import view from './screens/view';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import { createStackNavigator } from '@react-navigation/stack';
 
-const Stack = createStackNavigator();
-
-function MyStack() {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen name="view" component={view} />
-     
-    </Stack.Navigator>
-  );
-}
 
 
 
 const Login = () => {
  
-   
-  const navigation = useNavigation();
   const [show, setShow] = React.useState(false);
   // const [showEmailError, setShowEmailError] = React.useState(false);
   const [pwd, setPwd] = React.useState();
@@ -65,8 +52,8 @@ const Login = () => {
         {
  
             //Then open Profile activity and send user email to profile activity.
-            navigation.replace('MyStack');
- 
+            
+            Alert.alert('Sucessfully');
         }
         else{
  
